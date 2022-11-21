@@ -392,3 +392,25 @@ i:hover {
 }
 
 /*More text on Professional Builder*/
+
+.container-wrap{
+    width: 100%;
+}
+.frames{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images{
+    width: 100%;
+}
+
+.text-heading{
+    color: rgb(0,50,100);
+}
+
+.resume-btn{
+    border-radius: 24px;
+    padding: 12px;
+}
