@@ -1,0 +1,31 @@
+*{
+    margin: 0px 2px 0px 2px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+.nav-link{
+    color: white;
+}
+
+#marginright{
+    margin-right: auto;
+}
+
+.imgthmb{
+    height: 130px;
+    width: 200px; 
+    object-fit: contain;   
+}
+.card{
+    height: 350px;
+    width: 280px;
+    margin: auto;
+}
+
+h4{
+    font-size: larger;
+}
