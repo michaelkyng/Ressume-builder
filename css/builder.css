@@ -1,31 +1,127 @@
-*{
-    margin: 0px 2px 0px 2px;
-    padding: 0px;
+/*Body*/
+*, *::after, *::before{
+    box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(39, 39, 39);
+    margin: 0px;
+    padding: 0px;
+    --animation: 90vh;
 }
 
-.nav-link{
-    color: white;
+
+/*Navigation Bar*/
+div.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2  ;
+    width: 100%;
+    background:  rgba(0, 0, 0,0.6);
+    padding: 10px 20px;
 }
 
-#marginright{
-    margin-right: auto;
+.navbar ul{
+    margin-right: 2vw;
 }
 
-.imgthmb{
-    height: 130px;
-    width: 200px; 
-    object-fit: contain;   
-}
-.card{
-    height: 350px;
-    width: 280px;
-    margin: auto;
+.nav-link::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+    z-index: -1;
+    border-bottom: 2px solid #26a4b800;
+    
+
+    transition: bottom 300ms linear;
 }
 
-h4{
-    font-size: larger;
+.nav-link:hover::before,
+.nav-link:focus::before{
+    bottom: 0;
+    border-bottom-color: #afe6ee;
+    
 }
+
+.nav-link {
+    position: relative;
+    color: #41d3ea;
+    font-weight: 450;
+    font-size: medium;
+    overflow: visible;
+    transition: color 300ms ease-in-out;
+    
+}
+
+.nav-link:visited {
+    color: #41d3ea;
+}
+
+.nav-link:hover {
+    color: #afe6ee;
+}
+
+.nav-item {
+    padding-left: 20px;
+}
+
+
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+
+
+    
+    animation: dropdown 350ms ease-in-out 1;
+    --beginning : 0;
+    --ending : 1;
+    
+}
+
+.dropdown-menu li{
+    width: fit-content;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.dropdown-item{
+    color: beige;
+    transition: color 400ms ease-in-out;
+    
+}
+
+.dropdown-item p{
+    width: fit-content;
+    color: inherit;
+    font-size: 20px;
+}
+
+.dropdown-item:focus, 
+.dropdown-item:hover{
+    color: #41d3ea;
+    background-color: #00000033;
+    
+}
+
+.i-color {
+    color: beige;
+}
+
+
+@keyframes dropdown {
+    0%{
+        transform: scaleY(var(--beginning));
+    }
+    100%{
+        transform: scaleY(var(--ending));
+        
+    }
+    
+}
+
+
