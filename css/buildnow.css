@@ -1,3 +1,28 @@
+.main-case{
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.container-case{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case{
+    width: 1000px;
+    margin: 0px;
+    padding: 40px 10px;
+}
+
 .main-image{
-    background-image: url("");
+    background-image: url("../Images/template5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.second-part{
+    width: 45%;
+    padding: 50px;
 }
