@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .containar {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        height: 100vh;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .containar .left {
+        width: 70%;
+      }
+      .containar .right {
+        width: 30%;
+        background-color: #00aa93;
+      }
+      .name-box {
+        background-color: #00aa93;
+        height: 23%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 10px;
+        color: white;
+      }
+      .name-box p {
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      .info-box-right {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .info-box-left {
+        padding-left: 10px;
+      }
+      .header-box {
+        margin-top: 30px;
+        background-color: gainsboro;
+        padding: 10px;
+      }
+      .header-box p {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .summary-box .text-box {
+        padding-left: 10px;
+        padding-top: 15px;
+      }
+      .info-box-right .text-box {
+        color: white;
+      }
+      .info-box-right ul {
+        margin-left: 20px;
+      }
+      .contact {
+        margin-top: 190px;
+      }
+      .skills {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containar">
+      <div class="content left">
+        <div class="name-box">
+          <p>John</p>
+          <p>Diabshi</p>
+        </div>
+        <div class="info-box-left">
+          <div class="summary-box prof-summary">
+            <div class="header-box">
+              <p>Professional Summary</p>
+            </div>
+            <p class="text-box">
+              Successful sales professional with 10+ years experience in
+              large-scale food and retail environments. Implement cost control
+              measures to ensure operations remain within company targets.
+            </p>
+          </div>
+          <div class="summary-box work-summary">
+            <div class="header-box">
+              <p>Work Experience</p>
+            </div>
+            <p class="text-box">
+              Verizon Wireless, San Francisco, CA - Aug 2016 - Present District
+              Manager
+            </p>
+          </div>
+          <div class="summary-box work-summary">
+            <div class="header-box">
+              <p>Education</p>
+            </div>
+            <p class="text-box">Jun 10</p>
+            <p class="text-box">Master of Arts, Operations Management</p>
+            <p class="text-box">
+              San Francisco State University, San Francisco, CA
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content right">
+        <div class="info-box-right">
+          <div class="summary-box contact">
+            <div class="header-box">
+              <p>Education</p>
+            </div>
+            <p class="text-box">123 Main Street, San Francisco, CA 94122</p>
+            <p class="text-box">415-123-1200</p>
+            <p class="text-box">mwilliams@address.com</p>
+          </div>
+          <div class="summary-box skills">
+            <div class="header-box">
+              <p>Skills</p>
+            </div>
+            <ul class="text-box">
+              <li>TRAINED IN POINT-OF-SALE SYSTEM</li>
+              <li>SPANISH</li>
+              <li>GIT</li>
+              <li>PYTHON</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -130,3 +130,13 @@ div.navbar{
     border: 0.2px solid rgb(158, 158, 158);
     border-radius: 25px;
 }
+
+input{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+select{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
