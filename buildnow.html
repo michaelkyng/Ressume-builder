@@ -1,148 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/Bootstrap css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/buildnow.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
-        <script src="js/Bootstrap js/popper.min.js" defer></script>
-        <script src="js/Bootstrap js/bootstrap.min.js" defer></script>
-        <script src="js/Bootstrap js/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <script src="js/Bootstrap js/buildnow.js" async></script>
-        <title>Build Now</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Bootstrap css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/buildnow.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script src="js/Bootstrap js/popper.min.js" defer></script>
+    <script src="js/Bootstrap js/bootstrap.min.js" defer></script>
+    <script src="js/Bootstrap js/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="js/Bootstrap js/buildnow.js" async></script>
+    <title>Build Now</title>
 
-        <style>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin: 30px 0;
+      }
+      h2 {
+        color: #030e3f;
+        font-weight: 800;
+      }
+      .circle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #030e3f;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        z-index: 3;
+        box-shadow: 0 -5px 0 yellow;
+      }
+      .blue {
+        box-shadow: 0 -5px 0 #062aca;
+      }
+      .purple {
+        box-shadow: 0 -5px 0 #7605e0;
+      }
+      .orange {
+        box-shadow: 0 -5px 0 #e96b05;
+      }
 
-            .container {
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                margin: 30px 0;
-            }
-            h2 {
-                color: #030e3f;
-                font-weight: 800;
-            }
-            .circle {
-                position: relative;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background: #030e3f;
-                color: #fff;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-right: 8px;
-                z-index: 3;
-                box-shadow: 0 -5px 0 yellow;
-            }
-            .blue {
-                box-shadow: 0 -5px 0 #062aca;
-            }
-            .purple {
-                box-shadow: 0 -5px 0 #7605e0;
-            }
-            .orange {
-                box-shadow: 0 -5px 0 #e96b05;
-            }
+      .btn {
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: 600;
+        background: #062aca;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      p {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-expand-md" style="position: relative">
+        <a class="navbar-brand" href="/">
+          <img
+            class="logo img-fluid ms-2"
+            src="images/logo.png"
+            alt="logo"
+            height="40px"
+            width="80px"
+          />
+        </a>
 
-            .btn {
-                padding: 10px 20px;
-                color: #fff;
-                font-weight: 600;
-                background: #062aca;
-                margin-left: 20px;
-                margin-bottom: 20px;
-                display: inline-block;
-            }
-            p {
-                font-size: 12px;
-            }
-        </style>
-    </head>
-    <body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
 
-        <header>
-            <div class="navbar navbar-expand-md" style="position: relative;">
-                <a class="navbar-brand" href="/">
-                    <img class="logo img-fluid" src="images/BCW_logo.png" alt="logo" height = "60px" width = "150px">
-                </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link text-nowrap" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="choosetemplate.html"
+                >Resume Builder</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="#">Resume Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-Close="false"
+                >Contact us
+              </a>
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><p class="fab fa-twitter i-color"></p
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><p class="fab fa-telegram i-color"></p
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><p class="fab fa-whatsapp i-color"></p
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon navbar-dark"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center"> 
-                        <li class="nav-item active">
-                            <a class="nav-link text-nowrap" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-nowrap" href="choosetemplate.html">Resume Builder</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-nowrap" href="#">Resume Templates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-nowrap" href="#">About us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-Close="false">Contact us </a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#"><p class="fab fa-twitter i-color"> </p></a></li>
-                                <li><a class="dropdown-item" href="#"><p class="fab fa-telegram i-color"> </p></a></li>
-                                <li><a class="dropdown-item" href="#"><p class="fab fa-whatsapp i-color"> </p></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <main class="main-case">
+      <div class="container container-case">
+        <div class="d-flex case justify-content-between align-items-start">
+          <div class="img-fluid main-image"></div>
 
+          <div class="second-part">
+            <h2>The easiest way to create a professional resume</h2>
+            <div class="container">
+              <div class="circle blue">1</div>
+              <div class="text">Choose resume template</div>
             </div>
-        </header>
-
-        
-        <main class="main-case">
-            <div class="container container-case">
-                <div class="d-flex case justify-content-between align-items-start">
-            
-                    <div class="img-fluid main-image">
-                       
-                    </div>
-
-                    <div class="second-part">
-                        <h2>
-                            The easiest way to create 
-                            a professional resume
-                        </h2>
-                        <div class="container">
-                            <div class="circle blue">1</div>
-                            <div class="text">Choose resume template</div>
-                        </div>
-                        <div class="container">
-                            <div class="circle">2</div>
-                            <div class="text">Insert pre-written bullet points</div>
-                        </div>
-                        <div class="container">
-                            <div class="circle purple">3</div>
-                            <div class="text">Customize the details</div>
-                        </div>
-                        <div class="container">
-                            <div class="circle orange">4</div>
-                            <div class="text">Download your new resume</div>
-                        </div>
-                        <span>Simple, right?</span>
-                        <a class="btn btn-primary" href="choosetemplate.html">Lets get started</a>
-                        
-                    </div>
-                </div>
+            <div class="container">
+              <div class="circle">2</div>
+              <div class="text">Insert pre-written bullet points</div>
             </div>
-        </main>
-    </body>
+            <div class="container">
+              <div class="circle purple">3</div>
+              <div class="text">Customize the details</div>
+            </div>
+            <div class="container">
+              <div class="circle orange">4</div>
+              <div class="text">Download your new resume</div>
+            </div>
+            <span>Simple, right?</span>
+            <a class="btn btn-primary" href="choosetemplate.html"
+              >Lets get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
