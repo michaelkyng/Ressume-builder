@@ -1,17 +1,18 @@
+// Capitalize
+
+const capitalize = (word) => {
+  return word[0].toUpperCase() + word.substring(1);
+};
+
+const getParameter = (key) => {
+  let address = window.location.search;
+  let parameterList = new URLSearchParams(address);
+  return parameterList.get(key);
+};
+
 function generateCV() {
   window.event.preventDefault();
 
-  // Capitalize
-
-  const capitalize = (word) => {
-    return word[0].toUpperCase() + word.substring(1);
-  };
-
-  const getParameter = (key) => {
-    let address = window.location.search;
-    let parameterList = new URLSearchParams(address);
-    return parameterList.get(key);
-  };
   //Get Data from form
 
   // Contact info
@@ -40,11 +41,10 @@ function generateCV() {
   const school_start_date = document.querySelector("#school-start-date").value;
   const school_end_date = document.querySelector("#school-end-date").value;
   const degree = document.querySelector("#school-degree").value;
-  //Skill
-  //const skills = document.querySelector("#skills").value;
 
+  // Professional Summary
   const prof_summary = document.querySelector("#prof-summary").value;
-  // Convert to object
+
   var win = window.open(
     "",
     "Title",
@@ -53,6 +53,9 @@ function generateCV() {
       ",left=" +
       (screen.width - 840)
   );
+
+  // Template Literal
+
   win.document.body.innerHTML = `<!DOCTYPE html>
   <html lang="en">
     <head>
